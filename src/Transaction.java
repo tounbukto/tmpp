@@ -53,7 +53,7 @@ public class Transaction {
 
     public void commit() throws TransactionAbort {
         synchronized(Memory.memory) {
-            if(!writeSet.checkWrite(clock)) {
+            if(!writeSet.checkWrite(clock) || !readSet.checkRead(clock)) {
                 abort();
             }
             for(int i=0 ; i< writeSet.n_elements ; ++i){

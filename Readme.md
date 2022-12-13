@@ -1,7 +1,7 @@
 # MEMOIRE TRANSACTIONNELLE
 
 ce projet est une implementation d'une mémoire transactionnelle avec verroux en écriture 
-vous trouverez avec ce code un PDF qui explique le principe d'une mémoire transactionnelle ainsi que 2 exemples d'usage
+vous trouverez avec ce code un PDF qui explique le principe d'une mémoire transactionnelle ainsi que 2 exemples d'usage.
 
 ## Count to one Million
 - cet exemple consiste à faire une incrementation de la case d'index 0 sur la mémoire globale jusqu'à 1M, en utilisant 100 threads chacun va exécuter 10000 transactions afin de faire une incrementation par chaque transaction
